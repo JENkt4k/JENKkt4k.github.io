@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-
+    <div id="toast" class="toast">Text copied!</div>
     <div class="container">
         <h1>Blitz List</h1>
         <input type="text" id="peer-id-input" placeholder="Enter Peer ID">
@@ -17,9 +17,15 @@
 
         <input type="text" id="message-input" placeholder="Enter Message">
         <button id="send-msg-btn">Send Message</button>
+
+        <br>
+
+        <input type="text" id="message-output" placeholder="Messages ...">
+
         <div id="task-form">
             <input type="text" id="new-task" placeholder="Add a new task...">
             <button  id="add-task-button">Add Task</button><!-- onclick="addTask()">Add Task</button> -->
+            <!-- <button id="send-msg-btn">Send Message</button> -->
         </div>
         <div id="task-list-control-container">
           <div id="loading-indicator" style="display: none;">Loading tasks...</div>
@@ -29,10 +35,14 @@
     </div>
     <div id="qr-reader" style="width:500px"></div>
     <div id="qr-reader-results"></div>
-    <button id="initiate-p2p">Initiate P2P Connection</button>
+    <button id="copy-p2p-id">Copy ID & Connect</button>
     <canvas id="qr-code-canvas"></canvas>
+    
+    
     <div id="qrcode"></div>
+    <br>
 
+    <input type="text" id="my-peer-id" placeholder="My Peer ID">
 
     <!-- Button to trigger QR scanner -->
     <button id="btn-scan-qr">Scan QR Code</button>
